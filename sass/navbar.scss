@@ -1,0 +1,62 @@
+@import "variables";
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background: $primary;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    z-index: 10;
+    position: relative;
+
+    &_logo {
+        color: $dark;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 24px;
+        @extend %align-center;
+    }
+
+    &_menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        &-links {
+            color: $dark;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+
+            &:hover {
+                color: $light;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &_btnCart {
+        background-color: $dark;
+        border-radius: 8px;
+        border: 2px solid $dark;
+        width: 200px;
+        
+        &_el {
+            color: $light;
+        }
+
+        &:hover {
+            background-color: $secondary;
+            border: 2px solid $light;
+            transition: all 0.3s ease;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.topnav {
+    background-color: orange;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .myTopnav-left {
+    margin-left: 300px;
+  }
+
+  .buttonCart {
+    position: absolute;
+    right: 100px;
+    /* background-color: black; */
+    border-radius: 6px;
+  }
