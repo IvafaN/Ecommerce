@@ -17,81 +17,39 @@
             <div class="navbar_logo"><a href="/">i.Vanburger</a></div>
             <div class="navbar_menu">
                 <a href="/" class="navbar_menu-links">Home</a>
-                <a href="/" class="navbar_menu-links" id="btnStore">Store</a>
+                <a href="/" class="navbar_menu-links">Store</a>
                 <a href="/" class="navbar_menu-links">About</a>
                 <a href="/" class="navbar_menu-links" id="button"><i class="fas fa-phone-alt"></i></a>
                 <a href="/" class="navbar_menu-links">236 - 865 - 1561</a>
-
             </div>
             <button class="navbar_btnCart" id="navbar_btnCart">
                 <a href="/" class="navbar_btnCart_el"><i class="fas fa-shopping-cart"></i></a>
-                <a href="/" class="navbar_btnCart_el">3 items - </a>
-                <a href="/" class="navbar_btnCart_el">$100.00</a>
+                <a href="/" class="navbar_btnCart_el" id="cartItems">0 items - </a>
+                <a href="/" class="navbar_btnCart_el" id="cartTotal">$0.00</a>
             </button>
         </nav>
     </header>
 
-    <div class="home" id="home">
-        <img src="/img/hamburguer.jpg" alt="">
-        <h1>Try it once and You will love it.</h1>
-        <button class="btnOrder" id="btnOrder">Order Here!</button>
-    </div>
-
+    <section>
+        <div class="home" id="home">
+            <img src="/img/hamburguer.jpg" alt="">
+            <h1>Try it once and You will love it.</h1>
+            <button class="btnOrder" id="btnOrder">Order Here!</button>
+        </div>
+    </section>
 
     <section>
         <div class="store" id="store">
             <h1>Our Store</h1>
-
-            <div class="store_items" id="store_items">
-                <!-- <button class="store_items_btn">All items</button>
-                <button class="store_items_btn">Hamburguers</button>
-                <button class="store_items_btn">Fries</button>
-                <button class="store_items_btn">Sodas</button> -->
-            </div>
-
-            <div class="store_images">
-                <img src="/img/hamburgers/hamburger1.jpg">
-                <div class="stores_images_desc">
-                    <p>Vanaiiana $25.00</p>
-                    <button class="btnCartPlus" id="btnCartPlus">
-                        <a><i class="fas fa-cart-plus"></i></a>
-                    </button>
-                </div>
-            </div>
-
-
-
+            <div class="store_items" id="store_items"></div>
+            <div id="boxMeals"></div>
         </div>
     </section>
-
 
     <section>
         <div class="about" id="about">
             <h1>About</h1>
-
-            <div class="about_staff">
-                <div class="boxStaff">
-                    <img src="/img/chefs/chef1.jpg" alt="">
-                    <h6>Gordon Ramsay</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere nobis quisquam
-                        neque! Quo eos, soluta est, fuga tempore error facilis nulla at adipisci beatae consequuntur
-                        odit neque quas illo.</p>
-                </div>
-                <div class="boxStaff">
-                    <img src="/img/chefs/chef1.jpg" alt="">
-                    <h6>Gordon Ramsay</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere nobis quisquam
-                        neque! Quo eos, soluta est, fuga tempore error facilis nulla at adipisci beatae consequuntur
-                        odit neque quas illo.</p>
-                </div>
-                <div class="boxStaff">
-                    <img src="/img/chefs/chef1.jpg" alt="">
-                    <h6>Gordon Ramsay</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere nobis quisquam
-                        neque! Quo eos, soluta est, fuga tempore error facilis nulla at adipisci beatae consequuntur
-                        odit neque quas illo.</p>
-                </div>
-            </div>
+            <div class="about_staff" id="about_staff"></div>
         </div>
     </section>
 
